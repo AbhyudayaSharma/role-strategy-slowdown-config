@@ -1,0 +1,4 @@
+*.log
+home/*
+!home/init.groovy.d/
+!home/jenkins.yaml
