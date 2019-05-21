@@ -14,10 +14,8 @@ for (int i = 0; i < 300; i++) {
     user.setFullName(userName.toUpperCase(Locale.US))
 }
 
-if (createAdmin) {
-    User admin = securityRealm.createAccount("admin", "admin")
-    admin.setFullName("Admin")
-}
+User admin = securityRealm.createAccount("admin", "admin")
+admin.setFullName("Admin")
 
 println("=== Configure Authorize Project")
 GlobalQueueItemAuthenticator auth = new GlobalQueueItemAuthenticator(
